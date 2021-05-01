@@ -23,7 +23,7 @@ matrix1.axes = axes('position',[.47,.3,.5,.6]);
     function plotVectors(source,event)
         
         [V,D] = eig(matrix1.output); %gives us 2 matrices, V for the eigenvectors, D for the eigenvalues
-        %reminder to change variable name
+        
         matrix1.displayValues = uicontrol('style','text','units','normalized','position',[0.03,.58,.15,.033],'string','Eigen Values:','horizontalalignment','right');
         matrix1.displayValuesMatrix = uicontrol('style','text','units','normalized','position',[0.02,.38,.3,.17],'string',num2str(D),'horizontalalignment','center');
         matrix1.displayVectors = uicontrol('style','text','units','normalized','position',[0,.34,.15,.033],'string','Eigen Vectors:','horizontalalignment','right');
